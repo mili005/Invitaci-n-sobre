@@ -3,56 +3,50 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Invitación</title>
+<title>Invitación Sobre</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main class="scene">
-<section class="envelope" id="envelope" aria-label="Invitación interactiva">
+<div class="scene">
+<div class="envelope" id="envelope">
 <div class="envelope-shadow"></div>
-<div class="envelope-back"></div>
-
+<div class="envelope-back">
+<div class="paper-texture"></div>
+</div>
+<div class="flap flap-top">
+<div class="paper-texture"></div>
+</div>
+<div class="flap flap-bottom">
+<div class="paper-texture"></div>
+</div>
+<div class="flap flap-left">
+<div class="paper-texture"></div>
+</div>
+<div class="flap flap-right">
+<div class="paper-texture"></div>
+</div>
+<button class="seal" id="sealButton" aria-label="Abrir invitación">
+<div class="seal-shine"></div>
+<span class="seal-text">ABRIR</span>
+<div class="seal-crack seal-crack-one"></div>
+<div class="seal-crack seal-crack-two"></div>
+<div class="seal-crack seal-crack-three"></div>
+</button>
+<div class="seal-piece seal-piece-top"></div>
+<div class="seal-piece seal-piece-bottom"></div>
+<div class="seal-piece seal-piece-left"></div>
+<div class="seal-piece seal-piece-right"></div>
+<div class="spark"></div>
+<div class="spark"></div>
+<div class="spark"></div>
+<div class="spark"></div>
+</div>
 <div class="video-card" id="videoCard">
-<video id="invitationVideo" class="invitation-video" controls playsinline preload="metadata">
+<video class="invitation-video" id="invitationVideo" playsinline muted>
 <source src="invitacion.mp4.mov" type="video/mp4">
 </video>
 </div>
-
-<div class="flap flap-left">
-<div class="paper-texture"></div>
-<div class="seal-piece seal-piece-left"></div>
 </div>
-
-<div class="flap flap-right">
-<div class="paper-texture"></div>
-<div class="seal-piece seal-piece-right"></div>
-</div>
-
-<div class="flap flap-bottom">
-<div class="paper-texture"></div>
-<div class="seal-piece seal-piece-bottom"></div>
-</div>
-
-<div class="flap flap-top">
-<div class="paper-texture"></div>
-<div class="seal-piece seal-piece-top"></div>
-</div>
-
-<button class="seal" id="sealButton" type="button" aria-label="Abrir invitación">
-<span class="seal-shine"></span>
-<span class="seal-crack seal-crack-one"></span>
-<span class="seal-crack seal-crack-two"></span>
-<span class="seal-crack seal-crack-three"></span>
-<span class="seal-text">Tocar</span>
-</button>
-
-<div class="spark spark-one"></div>
-<div class="spark spark-two"></div>
-<div class="spark spark-three"></div>
-<div class="spark spark-four"></div>
-</section>
-</main>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 <script src="script.js"></script>
 </body>
