@@ -16,6 +16,9 @@ if(opened)return;
 opened=true;
 sealButton.disabled=true;
 
+// QUITAR EL MUTE INMEDIATAMENTE al tocar
+invitationVideo.muted=false;
+
 anime.timeline({autoplay:true})
 .add({
 targets:sealButton,
@@ -101,7 +104,10 @@ targets:videoCard,
 duration:1,
 begin:()=>{
 videoCard.classList.add("active");
-invitationVideo.play().catch(e=>console.log("Autoplay:",e));
+// Reproducir CON SONIDO
+invitationVideo.play().catch(e=>{
+console.log("Autoplay con sonido:",e);
+});
 }
 },"-=200");
 }
